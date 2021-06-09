@@ -1,5 +1,7 @@
 'use strict'
 
+const generate = () => Math.random().toString(36).substring(2)
+
 const draw = () => {
 	const ctx = document.getElementById('canvas').getContext('2d')
 	const img = document.getElementById('model')
@@ -32,6 +34,7 @@ const draw = () => {
 	})
 
 	save.addEventListener('click', event => {
+		event.target.download = `raoult-${generate()}.jpg`
 		event.target.href = ctx.canvas.toDataURL('image/jpeg')
 	}, false)
 }
