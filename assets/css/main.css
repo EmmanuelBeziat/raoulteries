@@ -1,0 +1,31 @@
+body {
+	background: #242424;
+	color: #ddd;
+	font: 400 16px/1.5 "Segoe UI", Helvetica, Roboto, Arial, sans-serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 0 0 1em;
+	font-weight: 200;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.app {
+	padding: 2rem;
+}
+
+#canvas {
+	max-width: 100%;
+}
+
+.dummy-image {
+	display: none;
+}
+
+.form {
+	max-width: 680px;
+	margin: auto;
+}
