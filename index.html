@@ -9,36 +9,44 @@
 	</head>
 	<body>
 		<div class="app">
-			<h1>Générateur de Raoulteries</h1>
+			<header class="app-header">
+				<h1 class="app-title">Générateur de Raoulteries</h1>
+			</header>
 
-			<div class="picture-maker">
-				<img id="model" class="dummy-image" src="assets/img/raoult-kenobi.jpg" alt="Raoult Kenobi">
-				<canvas id="canvas" class="mx-auto d-block"></canvas>
-			</div>
-
-			<div class="form mt-5">
-				<div class="mb-3 row">
-					<div class="col">
-						<input type="text" id="text" class="form-control form-control-lg" placeholder="Une magnifique citation" aria-label="Texte">
-					</div>
+			<main class="app-main">
+				<div class="picture-maker">
+					<img id="model" class="dummy-image" src="assets/img/raoult-kenobi.jpg" alt="Raoult Kenobi">
+					<canvas id="canvas" class="mx-auto d-block"></canvas>
 				</div>
 
-				<div class="mb-3 row g-3 align-items-center">
-					<div class="col-auto">
-						<label for="size" class="form-label">Taille de texte (<span class="text-size-preview"></span>) :</label>
+				<div class="form mt-5">
+					<div class="mb-3 row">
+						<div class="col">
+							<input type="text" id="text" class="form-control form-control-lg" placeholder="Une magnifique citation " aria-label="Texte">
+						</div>
 					</div>
 
-					<div class="col">
-						<input type="range" id="size" class="form-range" min="16" max="50" step="2" value="36">
-					</div>
-				</div>
+					<div class="mb-3 row g-3 align-items-center">
+						<div class="col-auto">
+							<label for="size" class="form-label">Taille de texte (<span class="text-size-preview"></span>) :</label>
+						</div>
 
-				<div class="row">
-					<div class="col d-grid">
-						<a id="save" download="raoult.jpg" class="btn btn-outline-light">Enregistrer</a>
+						<div class="col">
+							<input type="range" id="size" class="form-range" min="16" max="50" step="2" value="36">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col d-grid">
+							<a id="save" download="raoult.jpg" class="btn btn-outline-light">Enregistrer</a>
+						</div>
 					</div>
 				</div>
-			</div>
+			</main>
+
+			<footer class="app-footer">
+				Idée originale et photomontage par <a href="https://twitter.com/Tipuncho">@Tipuncho</a>. <br>Codé par <a href="https://twitter.com/EmmanuelBeziat">moi-même</a> comme un 🐒 à 5h du mat’.
+			</footer>
 		</div>
 
 		<script src="assets/js/main.min.js"></script>
