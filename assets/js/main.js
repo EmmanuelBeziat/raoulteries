@@ -3,7 +3,9 @@
 const generate = () => Math.random().toString(36).substring(2)
 
 const draw = () => {
-	const ctx = document.getElementById('canvas').getContext('2d')
+	/** @type {HTMLCanvasElement} */
+	const canvas = document.getElementById('canvas')
+	const ctx = canvas.getContext('2d')
 	const img = document.getElementById('model')
 	const text = document.getElementById('text')
 	const size = document.getElementById('size')
